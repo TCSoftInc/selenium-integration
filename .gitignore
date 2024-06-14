@@ -1,0 +1,4 @@
+.env
+tmp
+mochawesome-report/
+node_modules/

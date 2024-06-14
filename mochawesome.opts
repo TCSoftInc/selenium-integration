@@ -1,0 +1,9 @@
+{
+  "reportDir": "mochawesome-report",
+  "reportFilename": "report",
+  "quiet": true,
+  "json": true,
+  "html": false,
+  "overwrite": false,
+  "timestamp": true
+}

@@ -1,0 +1,24 @@
+{
+  "name": "tc-selenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha  --reporter mochawesome",
+    "createTestPlan": "node createTestPlan.js",
+    "report": "source setenv.sh && source tmp/tc_test_plan && uploadTCRunResult --apiToken=$TESTCOLLAB_API_KEY --projectId=$TESTCOLLAB_PROJECT_ID --companyId=$TESTCOLLAB_COMPANY_ID --testPlanId=$TESTCOLLAB_TEST_PLAN_ID --mochaJsonResult=./mochawesome-report/mochawesome.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "selenium-webdriver": "^4.21.0",
+    "testcollab-cypress-plugin": "^1.0.3",
+    "testcollab-sdk": "^2.0.19-SNAPSHOT.202406110514"
+  }
+}
